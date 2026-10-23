@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" id="exe-20261023035836IWCSSB">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by/4.0/">
+<title>4.2 Optimización de expresiones booleanas | Álgebra Booleana</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#20261023035836IWCSSB" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Introducción</a>
+</li>
+<li> <a href="../html/41-teoremas-y-postulados.html" class="no-ch">4.1 Teoremas y postulados</a>
+</li>
+<li> <a href="../html/ejercicio-practico-2.html" class="no-ch">Ejercicio Práctico 2</a>
+</li>
+<li> <a href="../html/ejercicio-practico-1.html" class="no-ch">Ejercicio práctico 1</a>
+</li>
+<li class="active"> <a href="../html/42-optimizacion-de-expresiones-booleanas.html" class="active no-ch">4.2 Optimización de expresiones booleanas</a>
+</li>
+<li> <a href="../html/43-aplicacion-del-algebra-booleana.html" class="no-ch">4.3 Aplicación del algebra booleana</a>
+</li>
+<li> <a href="../html/431-mini-y-maxi-terminos.html" class="no-ch">4.3.1 Mini y maxi términos</a>
+</li>
+<li> <a href="../html/ejemplo-practico-con-dos-variables.html" class="no-ch">Ejemplo práctico con dos variables</a>
+</li>
+<li> <a href="../html/432-representacion-de-expresiones-booleanas-con-ci.html" class="no-ch">4.3.2 Representación de expresiones booleanas
+con circuitos lógicos</a>
+</li>
+<li> <a href="../html/ejemplo-practico.html" class="no-ch">Ejemplo práctico</a>
+</li>
+<li> <a href="../html/evaluacion.html" class="no-ch">Evaluación</a>
+</li>
+<li> <a href="../html/crucigrama.html" class="no-ch">Crucigrama</a>
+</li>
+</ul>
+</nav><main id="20261023035836IWCSSB" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Álgebra Booleana</p></div>
+<div class="page-header"><h1 class="page-title sr-av">4.2 Optimización de expresiones booleanas</h1></div>
+</header><div id="page-content-20261023035836IWCSSB" class="page-content">
+<article id="20261023035836QXRKEI" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/guide.png" alt="" style="display:block;object-fit:contain;">
+</div>
+<h1 class="box-title">Optimización de expresiones booleanas</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260310222605803SFL" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260310222605803SFL&quot;}">
+<div class="exe-text-template">
+    <h5><span style="color: #236fa1;"><strong>Definición (¿Qué es?)</strong></span></h5>
+<p style="text-align: justify;"><br />La optimización (o simplificación) de expresiones booleanas consiste en reducir una función lógica compleja a su forma más simple que contenga el menor número de términos y de variables posible, sin alterar en ningún momento su comportamiento o resultado original.</p>
+<h5><strong><span style="color: #236fa1;">Importancia y Beneficios (¿Por qué se hace?)</span></strong><br /></h5>
+<p style="text-align: justify;">En el diseño de sistemas digitales y circuitos electrónicos, optimizar una función booleana es crucial porque permite:</p>
+<ul>
+<li style="text-align: justify;">Reducir costos: Se necesitan menos compuertas lógicas físicas para construir el circuito.</li>
+<li style="text-align: justify;">Aumentar la velocidad: Al haber menos componentes y conexiones, el tiempo de propagación de la señal disminuye (el circuito es más rápido).</li>
+<li style="text-align: justify;">Ahorrar espacio y energía: Los circuitos integrados ocupan menos espacio físico en la tarjeta y consumen menos potencia eléctrica.</li>
+</ul>
+<h5><strong><span style="color: #236fa1;">Métodos de Optimización (¿Cómo se hace?)</span></strong></h5>
+<p style="text-align: justify;">Para optimizar una expresión, se utilizan principalmente tres métodos (puedes mencionar que la tabla de teoremas que generamos pertenece al primer método):</p>
+<ol>
+<li style="text-align: justify;">Método Algebráico (Leyes y Teoremas)</li>
+<li>Mapas de Karnaugh (K-Maps)</li>
+<li>Método de Quine-McCluskey (Tabular)</li>
+</ol>
+<p><br /></p>
+<p><img src="../content/resources/descarga (1).jpg" width="327" height="246" alt="" style="display: block; margin-left: auto; margin-right: auto;" /><br /></p>
+<p style="text-align: center;"><br /></p>
+<p><br /></p>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/ejercicio-practico-1.html" title="Previous" class="nav-button nav-button-left"><span>Previous</span></a>
+<a href="../html/43-aplicacion-del-algebra-booleana.html" title="Next" class="nav-button nav-button-right"><span>Next</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc"> <p> <span class="license-label">License: </span><a href="https://creativecommons.org/licenses/by/4.0/" class="license">creative commons: attribution 4.0</a></p>
+</div>
+<div id="siteUserFooter"> <div>Agosto 2026</div>
+</div></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Made with eXeLearning <span>(New window)</span></span></a></p>
+</body>
+</html>
